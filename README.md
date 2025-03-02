@@ -19,3 +19,5 @@ To use the noteskin, download the [minimal-ddr-note](minimal-ddr-note) folder an
 This is basically a fork of Peter's DDR Note noteskin from [Peters-Noteskins](https://github.com/Pete-Lawrence/Peters-Noteskins) repo. 
 
 Hold / roll bodies and bottomcaps from HURG-IIDX's [Noteskin-Workshop-Dancegroove](https://github.com/HURG-IIDX/Noteskin-Workshop-DanceGroove) repo. 
+
+Special thanks to Max for teaching me about [LICEcap](https://www.cockos.com/licecap/)! It's a lifesaver for making gifs. 
