@@ -9,12 +9,11 @@ To use the noteskin, download the [minimal-ddr-note](minimal-ddr-note) folder an
 - Hold heads are tap notes for better clarity.
 - Made slight visual changes to explosions and notes. 
 
-## Demo
 Hojins-Minimal-DDR-Note
-[![Hojin_video](thumbnailpath)](videos/minimal_demo.mkv)
+![hojin](gifs/min_demo.gif)
 
 Peters-Minimal-DDR-Note
-[![Peter_video](thumbnailpath)](videos/peters_demo.mkv)
+![peter](gifs/peter_demo.gif)
 
 ## Credits / Attributions
 This is basically a fork of Peter's DDR Note noteskin from [Peters-Noteskins](https://github.com/Pete-Lawrence/Peters-Noteskins) repo. 
