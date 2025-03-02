@@ -9,12 +9,10 @@ To use the noteskin, download the [minimal-ddr-note](minimal-ddr-note) folder an
 - Hold heads are tap notes for better clarity.
 - Made slight visual changes to explosions and notes. 
 
-Hojins-Minimal-DDR-Note
-
+### Hojins-Minimal-DDR-Note
 ![hojin](gifs/min_demo.gif)
 
-Peters-Minimal-DDR-Note
-
+### Peters-Minimal-DDR-Note
 ![peter](gifs/peter_demo.gif)
 
 ## Credits / Attributions
