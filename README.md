@@ -13,7 +13,7 @@ To use the noteskin, download the [minimal-ddr-note](minimal-ddr-note) folder an
 ![hojin](gifs/min_demo.gif)
 
 ### Peters-Minimal-DDR-Note
-![peter](gifs/peter_demo.gif)
+![peter](gifs/peter_demo.gif) 
 
 ## Credits / Attributions
 This is basically a fork of Peter's DDR Note noteskin from [Peters-Noteskins](https://github.com/Pete-Lawrence/Peters-Noteskins) repo. 
