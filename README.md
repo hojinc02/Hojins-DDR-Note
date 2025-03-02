@@ -10,9 +10,11 @@ To use the noteskin, download the [minimal-ddr-note](minimal-ddr-note) folder an
 - Made slight visual changes to explosions and notes. 
 
 Hojins-Minimal-DDR-Note
+
 ![hojin](gifs/min_demo.gif)
 
 Peters-Minimal-DDR-Note
+
 ![peter](gifs/peter_demo.gif)
 
 ## Credits / Attributions
