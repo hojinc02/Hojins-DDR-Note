@@ -1,5 +1,5 @@
 # Hojins-Minimal-DDR-Note
-This is a minimal and function focused version of Peter's DDR Note noteskin. Assets from HURG-IIDX's customizable noteskins were used here as well. 
+This is a minimal and function focused version of Peter's DDR Note noteskin for the rhythm game StepMania (and StepMania adjacent games). Assets from HURG-IIDX's customizable noteskins were used here as well. 
 
 ## Changes
 - Only Marvelous judgement notes will have the bright spiked explosion effects.
