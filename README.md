@@ -15,5 +15,5 @@ Peters-Minimal-DDR-Note
 [![Peter_video](thumbnailpath)](videopath)
 
 ## Credits / Attributions
-This is basically a fork of Peter's DDR Note noteskin from [Peters-Noteskins]([https://github.com/example/repo1](https://github.com/Pete-Lawrence/Peters-Noteskins)) repo. 
+This is basically a fork of Peter's DDR Note noteskin from [Peters-Noteskins](https://github.com/Pete-Lawrence/Peters-Noteskins) repo. 
 Hold / roll bodies and bottomcaps from HURG-IIDX's [Noteskin-Workshop-Dancegroove](https://github.com/HURG-IIDX/Noteskin-Workshop-DanceGroove) repo. 
