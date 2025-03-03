@@ -4,11 +4,11 @@ This is a minimal and function focused version of Peter's DDR Note noteskin for 
 To use the noteskin, extract the [ddr-minimal.zip](ddr-minimal.zip) file into the Noteskins folder in StepMania. 
 
 ## Changes
+- Fixed bottomcaps of hold and roll notes being misaligned by a few pixels.
+- Hold heads are tap notes for better clarity.
 - Only Marvelous judgement notes will have the bright spiked explosion effects.
 - Hold bodies were simplified. 
-- Hold heads are tap notes for better clarity.
 - Made slight visual changes to explosions and notes.
-- Fixed bottomcaps of hold and roll notes being misaligned by a few pixels. 
 
 ### Hojins-Minimal-DDR-Note
 ![hojin](gifs/min_demo.gif)
