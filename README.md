@@ -1,14 +1,14 @@
-# Hojins-Minimal-DDR-Note
-This is a minimal and function focused version of Peter's DDR Note noteskin for the rhythm game StepMania (and StepMania adjacent games). Assets from HURG-IIDX's customizable noteskins were used here as well. 
+# Hojins-DDR-Note
+This is a function focused version of Peter's DDR Note noteskin for the rhythm game StepMania (and StepMania adjacent games). Assets from HURG-IIDX's customizable noteskins were used here as well. 
 
 To use the noteskin, extract the [ddr-minimal.zip](ddr-minimal.zip) file into the Noteskins folder in StepMania. 
 
+(In ITGMania the hold bottom caps were showing up slightly off so the fixed versions are included in a folder)
+
 ## Changes
-- Fixed bottomcaps of hold and roll notes being misaligned by a few pixels.
-- Hold heads are tap notes for better clarity.
-- Only Marvelous judgement notes will have the bright spiked explosion effects.
-- Hold bodies were simplified. 
-- Made slight visual changes to explosions and notes.
+- Hold heads are tap notes.
+- Only Marvelous judgement notes have the bright spiked explosion effects.
+- Visual changes made to explosions and notes.
 
 ### Hojins-Minimal-DDR-Note
 ![hojin](gifs/min_demo.gif)
