@@ -2,7 +2,7 @@
 ![gif](out.gif)
 
 ## Notes
-To use the noteskin, extract the [ddr-minimal.zip](ddr-minimal.zip) file into the Noteskins folder in StepMania. 
+To use the noteskin, extract [ddr-hojin.zip](ddr-hojin.zip) into the Noteskins folder in StepMania. 
 
 In ITGMania the hold bottom caps are slightly off so use the fixed pngs in the itg folder in the zip file. 
 
