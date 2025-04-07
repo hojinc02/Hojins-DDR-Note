@@ -1,11 +1,11 @@
-local COLOR_W1 = color("#b8eefe")
-local COLOR_W2 = color("#ffe564")
-local COLOR_W3 = color("#64ff75")
-local COLOR_W4 = color("#65cbff")
-local COLOR_W5 = color("#e765f7")
+local COLOR_W1 = color("#afeafe")
+local COLOR_W2 = color("#ffe25c")
+local COLOR_W3 = color("#5dff70")
+local COLOR_W4 = color("#5fc3ff")
+local COLOR_W5 = color("#e25ff9")
 local COLOR_SHOCK = color("#64c8ff")
-local COLOR_W1_R = 0.722
-local COLOR_W1_G = 0.933
+local COLOR_W1_R = 0.686
+local COLOR_W1_G = 0.918
 local COLOR_W1_B = 0.996
 
 
@@ -95,7 +95,7 @@ local function holddiffuse()
 	return 
 		function(self)
 			self:
-			sleep(0.11):
+			sleep(0.16):
 			blend(Blend.Add):
 			diffuse(COLOR_W1):
 			diffuseshift():
