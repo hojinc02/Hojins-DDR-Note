@@ -97,8 +97,11 @@ local function holddiffuse()
 	return 
 		function(self)
 			self:
-			sleep(0.16):
+			sleep(0.10):
 			blend(Blend.Add):
+      zoom(0.8):
+      linear(0.04):
+      zoom(1.0):
 			diffuse(COLOR_W1):
 			diffuseshift():
 			effectcolor1(COLOR_HOLD_R,COLOR_HOLD_G,COLOR_HOLD_B,0.6):
