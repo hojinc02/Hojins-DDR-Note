@@ -1,6 +1,6 @@
-local COLOR_W1 = color("#afeafe")
-local COLOR_W2 = color("#ffde50")
-local COLOR_W3 = color("#57ff6b")
+local COLOR_W1 = color("#61c5ff")
+local COLOR_W2 = color("#ffcd16")
+local COLOR_W3 = color("#17ff38")
 local COLOR_W4 = color("#e967f7")
 local COLOR_W5 = color("#ff5020")
 local COLOR_HOLD = color("#ececec")
@@ -63,14 +63,13 @@ local function ghostdim(c)
 	return 
 		function(self)
 			self:
-			blend(Blend.Add):
 			diffuse(c):
 			diffusealpha(1.0):
 			zoom(0.9):
 			linear(0.12):
 			zoom(1):
 			diffusealpha(1.0):
-			sleep(0.04):
+			sleep(0.09):
 			linear(0.04):
 			diffusealpha(0)
 		end
@@ -80,7 +79,6 @@ local function ghostbright(c)
 	return 
 		function(self)
 			self:
-			blend(Blend.Add):
 			diffuse(c):
 			diffusealpha(1.0):
 			zoom(0.64):

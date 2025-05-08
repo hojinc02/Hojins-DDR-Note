@@ -54,6 +54,7 @@ ret.PartsToRotate =
 	["Roll Head Inactive"] = true,
 	["Hold Explosion"] = true,
 	["Roll Explosion"] = true,
+  ["Press"] = true
 };
 
 ret.Rotate =
