@@ -14,9 +14,9 @@ local COLOR_HOLD_B = 0.925
 local function invisible()
 	return 
 		function(self) 
-			self:
-			blend(Blend.Add):
-			diffuse(0,0,0,0) 
+			self
+			:blend(Blend.Add)
+			:diffuse(0,0,0,0) 
 		end
 end
 
@@ -31,80 +31,80 @@ end
 local function shockbright()
 	return 
 		function(self)
-			self:
-			blend(Blend.Add):
-			diffuse(COLOR_SHOCK):
-			diffusealpha(0.9):
-			zoom(2.5):
-			sleep(0.2):
-			linear(0.01):
-			diffusealpha(0.0)
+			self
+			:blend(Blend.Add)
+			:diffuse(COLOR_SHOCK)
+			:diffusealpha(0.9)
+			:zoom(2.5)
+			:sleep(0.2)
+			:linear(0.01)
+			:diffusealpha(0.0)
 		end
 end
 
 local function shockzap()
 	return 
 		function(self)
-			self:
-			blend(Blend.Add):
-			diffuse(COLOR_W1):
-			diffusealpha(0.9):
-			rotationz(0):
-			zoom(0.7):
-			spring(0.05):
-			zoom(1.3):
-			sleep(0.15):
-			linear(0.01):
-			diffusealpha(0.0)
+			self
+			:blend(Blend.Add)
+			:diffuse(COLOR_W1)
+			:diffusealpha(0.9)
+			:rotationz(0)
+			:zoom(0.7)
+			:spring(0.05)
+			:zoom(1.3)
+			:sleep(0.15)
+			:linear(0.01)
+			:diffusealpha(0.0)
 		end
 end
 
 local function ghostdim(c)
 	return 
 		function(self)
-			self:
-			diffuse(c):
-      zoom(0.95):
-			linear(0.03):
-			zoom(1):
-			sleep(0.12):
-			linear(0.05):
-      zoom(0.8):
-			diffusealpha(0)
+			self
+			:diffuse(c)
+      :zoom(0.95)
+			:linear(0.03)
+			:zoom(1)
+			:sleep(0.12)
+			:linear(0.05)
+      :zoom(0.8)
+			:diffusealpha(0)
 		end
 end
 
 local function ghostbright(c)
 	return 
 		function(self)
-			self:
-			diffuse(c):
-			diffusealpha(1.0):
-			zoom(0.64):
-			linear(0.03):
-			zoom(0.8):
-			diffusealpha(1.0):
-			sleep(0.06):
-			linear(0.02):
-      zoom(0.95):
-			diffusealpha(0)
+			self
+			:diffuse(c)
+			:diffusealpha(1.0)
+			:zoom(0.64)
+			:linear(0.03)
+			:zoom(0.8)
+			:diffusealpha(1.0)
+			:sleep(0.06)
+			:linear(0.02)
+      :zoom(0.95)
+			:diffusealpha(0)
 		end
 end
 
 local function holddiffuse()
 	return 
 		function(self)
-			self:
-			sleep(0.10):
-			blend(Blend.Add):
-      zoom(0.8):
-      linear(0.04):
-      zoom(1.0):
-			diffuse(COLOR_W1):
-			diffuseshift():
-			effectcolor1(COLOR_HOLD_R,COLOR_HOLD_G,COLOR_HOLD_B,0.6):
-			effectcolor2(COLOR_HOLD_R,COLOR_HOLD_G,COLOR_HOLD_B,0.9):
-			effectperiod(0.08)
+			self
+			:sleep(0.10)
+			:blend(Blend.Add)
+      :zoom(0.8)
+      :linear(0.04)
+      :zoom(1.0)
+			:diffuse(COLOR_W1)
+			:diffuseshift()
+			:effectcolor1(COLOR_HOLD_R,COLOR_HOLD_G,COLOR_HOLD_B,0.6)
+			:effectcolor2(COLOR_HOLD_R,COLOR_HOLD_G,COLOR_HOLD_B,0.9)
+			:effectperiod(0.08)
 		end
 end
 
