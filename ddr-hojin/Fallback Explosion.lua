@@ -64,13 +64,12 @@ local function ghostdim(c)
 		function(self)
 			self:
 			diffuse(c):
-			diffusealpha(1.0):
-			zoom(0.9):
-			linear(0.12):
+      zoom(0.95):
+			linear(0.03):
 			zoom(1):
-			diffusealpha(1.0):
-			sleep(0.09):
-			linear(0.04):
+			sleep(0.12):
+			linear(0.05):
+      zoom(0.8):
 			diffusealpha(0)
 		end
 end
@@ -82,11 +81,12 @@ local function ghostbright(c)
 			diffuse(c):
 			diffusealpha(1.0):
 			zoom(0.64):
-			linear(0.06):
+			linear(0.03):
 			zoom(0.8):
 			diffusealpha(1.0):
-			sleep(0.02):
-			linear(0.04):
+			sleep(0.06):
+			linear(0.02):
+      zoom(0.95):
 			diffusealpha(0)
 		end
 end
@@ -128,7 +128,7 @@ local t = Def.ActorFrame {
 		W3Command=ghostdim(COLOR_W3),
 		W4Command=ghostdim(COLOR_W4),
 		W5Command=ghostdim(COLOR_W5),
-		HeldCommand=ghostdim(COLOR_W1),
+		HeldCommand=ghostdim(COLOR_HOLD),
 	},
 	NOTESKIN:LoadActor( Var "Button", "Tap Explosion Bright" ) .. {
 		JudgmentCommand=finish(),
@@ -141,6 +141,7 @@ local t = Def.ActorFrame {
 		InitCommand=invisible(),
 		
 		W2Command=ghostbright(COLOR_W2),
+    HeldCommand=ghostbright(COLOR_HOLD),
 	},
 	NOTESKIN:LoadActor( Var "Button", "HitMine Explosion" ) .. {
 		InitCommand=invisible();

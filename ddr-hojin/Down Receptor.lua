@@ -1,12 +1,12 @@
-overlay_opacity=0.78
+overlay_opacity=0.67
 
 local function pressreceptor()
 	return 
     function(self) 
       self
       :finishtweening()
-      :zoom(0.8)
-      :linear(0.03)
+      :zoom(0.75)
+      :linear(0.04)
       :zoom(1.0)
     end
 end
@@ -17,7 +17,7 @@ local function pressoverlay()
       self
       :finishtweening()
       :diffusealpha(overlay_opacity)
-      :zoom(0.9)
+      :zoom(0.95)
       :linear(0.03)
       :zoom(1.0)
       :diffusealpha(overlay_opacity)
@@ -28,11 +28,11 @@ local function liftoverlay()
   return
     function(self)
 			self
-      :stoptweening()
+      :finishtweening()
       :diffusealpha(overlay_opacity)
 			:zoom(1.0)
-			:linear(0.03)
-			:zoom(0.9)
+			:linear(0.025)
+			:zoom(0.95)
       :diffusealpha(0)
 		end
 end
