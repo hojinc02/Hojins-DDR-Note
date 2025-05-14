@@ -1,4 +1,4 @@
-local COLOR_W1 = color("#61c5ff")
+local COLOR_W1 = color("#89d8ff")
 local COLOR_W2 = color("#ffcd16")
 local COLOR_W3 = color("#17ff38")
 local COLOR_W4 = color("#e967f7")
