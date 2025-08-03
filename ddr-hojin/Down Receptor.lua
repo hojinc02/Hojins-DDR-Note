@@ -1,4 +1,5 @@
 overlay_opacity=0.8
+frame=0.03333333
 
 local function pressreceptor()
 	return 
@@ -6,7 +7,7 @@ local function pressreceptor()
       self
       :finishtweening()
       :zoom(0.75)
-      :linear(0.04)
+      :linear(3*frame)
       :zoom(1.0)
     end
 end
@@ -18,7 +19,7 @@ local function pressoverlay()
       :finishtweening()
       :diffusealpha(overlay_opacity)
       :zoom(0.95)
-      :linear(0.03)
+      :linear(1*frame)
       :zoom(1.0)
       :diffusealpha(overlay_opacity)
     end
@@ -31,7 +32,7 @@ local function liftoverlay()
       :finishtweening()
       :diffusealpha(overlay_opacity)
 			:zoom(1.0)
-			:linear(0.028)
+			:linear(1*frame)
 			:zoom(0.95)
       :diffusealpha(0)
 		end
@@ -44,7 +45,7 @@ local t = Def.ActorFrame {
 		InitCommand=
       function(self)
         self:effectclock("beat");
-        self:SetStateProperties({{Frame= 0, Delay=0.2}, {Frame= 1, Delay=0.8}});
+        self:SetStateProperties({{Frame=0, Delay=6*frame}, {Frame=1, Delay=24*frame}});
 			end;
 		NoneCommand=pressreceptor(),
 		PressCommand=pressreceptor(),
@@ -55,12 +56,12 @@ local t = Def.ActorFrame {
 		W2Command=pressreceptor(),
 		W1Command=pressreceptor(),
 	};
-  Def.Sprite {
-    Texture=NOTESKIN:GetPath('Down', 'Press');
-    InitCommand=function(self) self:diffusealpha(0); end;
-    NoneCommand=pressoverlay(),
-    PressCommand=pressoverlay(),
-    LiftCommand=liftoverlay(),
-  };
+--  Def.Sprite {
+--    Texture=NOTESKIN:GetPath('Down', 'Press');
+--    InitCommand=function(self) self:diffusealpha(0); end;
+--    NoneCommand=pressoverlay(),
+--    PressCommand=pressoverlay(),
+--    LiftCommand=liftoverlay(),
+--  };
 };
 return t;

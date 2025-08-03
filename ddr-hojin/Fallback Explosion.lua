@@ -8,7 +8,7 @@ local COLOR_SHOCK = color("#64c8ff")
 local COLOR_HOLD_R = 0.925
 local COLOR_HOLD_G = 0.925
 local COLOR_HOLD_B = 0.925
-
+local frame = 0.03333333
 
 
 local function invisible()
@@ -36,8 +36,8 @@ local function shockbright()
 			:diffuse(COLOR_SHOCK)
 			:diffusealpha(0.9)
 			:zoom(2.5)
-			:sleep(0.2)
-			:linear(0.01)
+			:sleep(6*frame)
+			:linear(1*frame)
 			:diffusealpha(0.0)
 		end
 end
@@ -51,10 +51,10 @@ local function shockzap()
 			:diffusealpha(0.9)
 			:rotationz(0)
 			:zoom(0.7)
-			:spring(0.05)
+			:spring(1*frame)
 			:zoom(1.3)
-			:sleep(0.15)
-			:linear(0.01)
+			:sleep(5*frame)
+			:linear(1*frame)
 			:diffusealpha(0.0)
 		end
 end
@@ -65,10 +65,10 @@ local function ghostdim(c)
 			self
 			:diffuse(c)
       :zoom(0.95)
-			:linear(0.03)
+			:linear(1*frame)
 			:zoom(1)
-			:sleep(0.12)
-			:linear(0.05)
+			:sleep(4*frame)
+			:linear(1*frame)
       :zoom(0.8)
 			:diffusealpha(0)
 		end
@@ -81,11 +81,11 @@ local function ghostbright(c)
 			:diffuse(c)
 			:diffusealpha(1.0)
 			:zoom(0.64)
-			:linear(0.03)
+			:linear(1*frame)
 			:zoom(0.8)
 			:diffusealpha(1.0)
-			:sleep(0.06)
-			:linear(0.02)
+			:sleep(2*frame)
+			:linear(1*frame)
       :zoom(0.95)
 			:diffusealpha(0)
 		end
@@ -95,16 +95,16 @@ local function holddiffuse()
 	return 
 		function(self)
 			self
-			:sleep(0.10)
+			:sleep(3*frame)
 			:blend(Blend.Add)
       :zoom(0.8)
-      :linear(0.04)
+      :linear(1*frame)
       :zoom(1.0)
 			:diffuse(COLOR_W1)
 			:diffuseshift()
 			:effectcolor1(COLOR_HOLD_R,COLOR_HOLD_G,COLOR_HOLD_B,0.6)
 			:effectcolor2(COLOR_HOLD_R,COLOR_HOLD_G,COLOR_HOLD_B,0.9)
-			:effectperiod(0.08)
+			:effectperiod(3*frame)
 		end
 end
 
