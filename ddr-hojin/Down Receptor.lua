@@ -7,7 +7,7 @@ local function pressreceptor()
       self
       :finishtweening()
       :zoom(0.75)
-      :linear(3*frame)
+      :linear(4*frame)
       :zoom(1.0)
     end
 end
@@ -45,7 +45,7 @@ local t = Def.ActorFrame {
 		InitCommand=
       function(self)
         self:effectclock("beat");
-        self:SetStateProperties({{Frame=0, Delay=6*frame}, {Frame=1, Delay=24*frame}});
+        self:SetStateProperties({{Frame=0, Delay=0.2}, {Frame=1, Delay=0.8}});
 			end;
 		NoneCommand=pressreceptor(),
 		PressCommand=pressreceptor(),
@@ -56,12 +56,5 @@ local t = Def.ActorFrame {
 		W2Command=pressreceptor(),
 		W1Command=pressreceptor(),
 	};
---  Def.Sprite {
---    Texture=NOTESKIN:GetPath('Down', 'Press');
---    InitCommand=function(self) self:diffusealpha(0); end;
---    NoneCommand=pressoverlay(),
---    PressCommand=pressoverlay(),
---    LiftCommand=liftoverlay(),
---  };
 };
 return t;
